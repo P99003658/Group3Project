@@ -2,12 +2,9 @@
     pageEncoding="ISO-8859-1"%>
   <%
         Cookie firstName = new Cookie("first_name", request.getParameter("empid"));
-  
         response.addCookie( firstName );
-      
         %>
 <html>
-
 <head>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -19,7 +16,6 @@
         background-color: #F3EBF6;
         font-family: 'Ubuntu', sans-serif;
     }
-    
     .main {
         background-color: #FFFFFF;
         width: 400px;
@@ -54,7 +50,6 @@
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -63,11 +58,9 @@
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
@@ -80,21 +73,16 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  
+  font-size: 16px; 
 }
-    
-    .sign {
+ .sign {
         padding-top: 40px;
         color: #8C55AA;
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 23px;
     }
-    
-    
-    
-    form.form1 {
+form.form1 {
         padding-top: 20px;
     }
 	form.form2 {
@@ -103,9 +91,8 @@
 	form.form3 {
         padding-top: 20px;
     }
-    
-    .pass {
-            width: 76%;
+ .pass {
+    width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
     font-size: 14px;
@@ -123,15 +110,11 @@
     margin-bottom: 27px;
     font-family: 'Ubuntu', sans-serif;
     }
-    
-   
-    .un:focus, .pass:focus {
+.un:focus, .pass:focus {
         border: 2px solid rgba(0, 0, 0, 0.18) !important;
-        
-    }
-    
-    .submit {
-      cursor: pointer;
+}
+.submit {
+        cursor: pointer;
         border-radius: 5em;
         color: #fff;
         background: linear-gradient(to right, #9C27B0, #E040FB);
@@ -145,38 +128,25 @@
         font-size: 13px;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
-    
-    
-    
-    
-    
-    @media (max-width: 600px) {
+ @media (max-width: 600px) {
         .main {
             border-radius: 0px;
         }
-  
-  </style>
+</style>
 </head>
-
 <body>
 <h1>Welcome ADMIN ${value} ${empId}</h1>
-  
-
 <div>
- <a class = "button1"  href = "login"><span>Logout</span></a>
+<a class = "button1"  href = "login"><span>Logout</span></a>
 </div>
-  <div class="main">
-    <p class="sign" align="center">Complaint Management System</p>
- 
- <form class="form3" action="" method="get" target="_blank">
-  <a class="button" href = "allusers"><span>View Users </span></a><br><br>
-  <a class="button" href = "allcomplaints"><span>View Complaints </span></a><br><br>
-  <a class="button" href = "allresolvers"><span>View Resolvers </span></a><br><br>
-   <a class="button" href = "adddepartment"><span>Assign Role </span></a><br><br>
-  
-  </form>
-     </div>
-     
+<div class="main">
+<p class="sign" align="center">Complaint Management System</p>
+<form class="form3" action="" method="get" target="_blank">
+<a class="button" href = "allusers"><span>View Users </span></a><br><br>
+<a class="button" href = "allcomplaints"><span>View Complaints </span></a><br><br>
+<a class="button" href = "allresolvers"><span>View Resolvers </span></a><br><br>
+<a class="button" href = "adddepartment"><span>Assign Role </span></a><br><br>
+</form>
+</div>
 </body>
-
 </html>
